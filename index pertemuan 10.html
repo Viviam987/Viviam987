@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert and Coercions</title>
+</head>
+<body>
+    <h1>Contoh Convertion and Coercions Dalam Javascipt</h1>
+</body>
+<script>
+    var angkaString = '42';
+    // merubah jadi integer
+    var angkaInteger = parseInt(angkaString);
+    // merubah jadi float (desimal)
+    var angkaFloat = parseFloat(angkaString);
+
+    document.write("<h3>Conversions</h3>");
+    document.write("string: " + angkaString +"<br>");
+    document.write("integer: " + angkaInteger + "<br>");
+    document.write("float: " + angkaFloat + "<br>")
+
+    // coercions (implicit type convetion)
+    var angka = 10;
+    var string = "29";
+    var hasil = angka + string;
+
+    document.write("<h3>coercion</h3>")
+    document.write("angka: " + angka + "<br>")
+    document.write("string: " + string + "<br>")
+    document.write("hasil: " + hasil + "<br>")
+
+    var boolean = true;
+    var number = 42;
+    var result = boolean + number;
+
+    document.write("boolean: " + boolean + "<br>")
+    document.write("number: " + number + "<br>")
+    document.write("result: " + boolean + "<br>")
+</script>
+<body>
+</html>
